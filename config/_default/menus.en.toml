@@ -1,0 +1,104 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "About Us"
+url = "/about-us"
+weight = 2
+
+[[main]]
+name = "Elements"
+url = "/elements"
+weight = 3
+
+[[main]]
+weight = 4
+name = "Pages"
+
+[[main]]
+parent = "Pages"
+name = "Blog"
+url = "/blog"
+
+
+
+[[main]]
+parent = "Pages"
+name = "Authors"
+url = "/authors"
+
+[[main]]
+parent = "Pages"
+name = "Categories"
+url = "/categories"
+
+[[main]]
+parent = "Pages"
+name = "404 Page"
+url = "/404"
+
+
+[[main]]
+weight = 5
+name = "Communimap project"
+
+[[main]]
+parent = "Communimap project"
+name = "Option 1"
+url = "/communimap/option-1"
+
+[[main]]
+parent = "Communimap project"
+name = "Option 2"
+url = "/communimap/option-2"
+
+[[main]]
+parent = "Communimap project"
+name = "Option 3"
+url = "/communimap/option-3"
+
+[[main]]
+weight = 6
+name = "Design Journey"
+
+[[main]]
+parent = "Design Journey"
+name = "Problem exploration"
+url = "/design-journey/problem-exploration"
+
+[[main]]
+parent = "Design Journey"
+name = "Idea evolution"
+url = "/design-journey/idea-evolution"
+
+[[main]]
+parent = "Design Journey"
+name = "Final design"
+url = "/design-journey/final-design"
+
+[[main]]
+weight = 7
+name = "Reflections"
+url = "/reflections"
+
+
+# footer menu
+[[footer]]
+name = "Option 1"
+url = "/communimap/option-1"
+weight = 1
+
+[[footer]]
+name = "Option 2"
+url = "/communimap/option-2"
+weight = 2
+
+[[footer]]
+name = "Option 3"
+url = "/communimap/option-3"
+weight = 3

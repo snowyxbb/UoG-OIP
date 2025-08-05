@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="md:col-10 lg:col-7 text-center">
+          <h1 class="h2 mb-6">{{ .Title }}</h1>
+          <div class="content">{{ .Content }}</div>
+        </div>
+      </div>
+      <div class="row justify-center">
+        {{ range .Paginator.Pages }}
+          <div class="lg:col-4 md:col-6 mb-14">
+            {{ partial "components/blog-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
