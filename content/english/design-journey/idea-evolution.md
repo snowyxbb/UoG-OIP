@@ -3,7 +3,7 @@ title: "Idea Evolution"
 meta_title: "Idea Evolution"
 description: "How our ideas evolved from initial concepts to refined solutions."
 date: 2025-08-05T12:05:00Z
-image: "/images/image-placeholder.png"
+image: "images/og-image.png"
 categories: ["Design Journey"]
 author: "Team Member 2"
 tags: ["ideation", "prototyping"]

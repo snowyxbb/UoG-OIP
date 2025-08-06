@@ -44,42 +44,9 @@ url = "/404"
 
 
 [[main]]
-weight = 5
-name = "Communimap project"
-
-[[main]]
-parent = "Communimap project"
-name = "Option 1"
-url = "/communimap/option-1"
-
-[[main]]
-parent = "Communimap project"
-name = "Option 2"
-url = "/communimap/option-2"
-
-[[main]]
-parent = "Communimap project"
-name = "Option 3"
-url = "/communimap/option-3"
-
-[[main]]
-weight = 6
 name = "Design Journey"
-
-[[main]]
-parent = "Design Journey"
-name = "Problem exploration"
-url = "/design-journey/problem-exploration"
-
-[[main]]
-parent = "Design Journey"
-name = "Idea evolution"
-url = "/design-journey/idea-evolution"
-
-[[main]]
-parent = "Design Journey"
-name = "Final design"
-url = "/design-journey/final-design"
+url = "/design-journey"
+weight = 5
 
 [[main]]
 weight = 7

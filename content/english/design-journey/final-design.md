@@ -3,7 +3,7 @@ title: "Final Design"
 meta_title: "Final Design"
 description: "The culmination of our design process, presenting the final solution."
 date: 2025-08-05T12:10:00Z
-image: "/images/image-placeholder.png"
+image: "images/og-image.png"
 categories: ["Design Journey"]
 author: "Team Member 3"
 tags: ["final-design", "solution"]

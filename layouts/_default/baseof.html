@@ -43,10 +43,6 @@
       {{ block "main" . }}{{ end }}
     </main>
 
-    <!-- footer -->
-    {{ partial "essentials/footer.html" . }}
-
-
     <!-- script (always cache it) -->
     {{ partialCached "essentials/script.html" . }}
   </body>

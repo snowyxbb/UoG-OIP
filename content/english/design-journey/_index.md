@@ -1,6 +1,8 @@
 ---
-title: "Design Journey"
+title: "Our Design Journey"
 draft: false
 ---
 
-This section outlines our design process from problem exploration to the final solution.
+## From Concept to Creation
+
+Explore the detailed steps and iterative processes that shaped our project, from initial problem identification to the final solution. This journey highlights our commitment to innovation and user-centered design.

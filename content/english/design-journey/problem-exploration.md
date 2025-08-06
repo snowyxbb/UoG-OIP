@@ -3,7 +3,7 @@ title: "Problem Exploration"
 meta_title: "Problem Exploration"
 description: "Exploring the core problems and challenges."
 date: 2025-08-05T12:00:00Z
-image: "/images/image-placeholder.png"
+image: "images/og-image.png"
 categories: ["Design Journey"]
 author: "Team Member 1"
 tags: ["problem", "research"]

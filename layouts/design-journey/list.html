@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="container pb-12 snap-container">
+    <div class="row justify-center">
+      <div class="lg:col-10 snap-section">
+        <div class="content text-center">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down-button">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    {{ partial "components/timeline" . }}
+  </div>
+  {{ partial "essentials/footer" . }}
+{{ end }}
