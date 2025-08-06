@@ -1,10 +1,10 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
+    <section class="relative flex items-center justify-center h-screen">
+      <div class="container relative z-10">
         <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
+          <div class="lg:col-7 md:col-9 mb-8 text-center text-white">
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
@@ -25,10 +25,11 @@
               {{ end }}
             {{ end }}
           </div>
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
-          </div>
         </div>
+      </div>
+      <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-black/70"></div>
+        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "w-full h-full object-cover blur-sm" ) }}
       </div>
     </section>
   {{ end }}
