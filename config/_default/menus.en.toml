@@ -44,8 +44,8 @@ url = "/404"
 
 
 [[main]]
-name = "Design Journey"
-url = "/design-journey"
+name = "Project Journey"
+url = "/project-journey"
 weight = 5
 
 [[main]]
