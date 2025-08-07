@@ -10,7 +10,7 @@ members:
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   - name: "Vincent Santoso"
     image: "/images/Vincent.png"
-    bio: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    bio: "My friends calls me Sentosa sometimes."
   - name: "Sng Xue Bin"
     image: "/images/avatar.png"
     bio: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -25,4 +25,4 @@ members:
     bio: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione."
 ---
 
-We are a team of passionate developers from Team 2.
+We are group of passionate developers from Team 2.
