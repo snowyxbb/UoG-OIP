@@ -256,3 +256,57 @@ flowchart TD
 ### Custom video
 
 {{< video src="https://www.w3schools.com/html/mov_bbb.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
+
+<hr>
+
+### Definition Lists
+
+Term 1
+:   Definition of term 1.
+
+Term 2
+:   Definition of term 2, with a longer explanation.
+
+<hr>
+
+### Footnotes
+
+Here's a sentence with a footnote. [^1]
+
+Another sentence with another footnote. [^2]
+
+[^1]: This is the first footnote.
+[^2]: This is the second footnote.
+
+<hr>
+
+### Task Lists
+
+- [x] Task 1 (completed)
+- [ ] Task 2 (pending)
+- [ ] Task 3 (pending)
+
+<hr>
+
+### Inline HTML
+
+Sometimes you might need to use some <u>inline HTML</u> for specific formatting.
+
+<hr>
+
+### Keyboard Text
+
+To indicate keyboard input, use <kbd>Ctrl</kbd> + <kbd>C</kbd>.
+
+<hr>
+
+### Superscript and Subscript
+
+Superscript: X^2^, H~2~O
+Subscript: X^2^, H~2~O
+
+<hr>
+
+### Highlighting
+
+This is some ==highlighted text==.

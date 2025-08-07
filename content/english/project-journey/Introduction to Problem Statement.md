@@ -3,15 +3,11 @@ title: "Introduction to Problem Statement"
 meta_title: "Introduction to Problem Statement"
 description: "Information on the topic."
 date: 2025-07-22T12:10:00Z
-image: "images/og-image.png"
 categories: ["Project Journey"]
 author: "Ryan Oh"
 tags: ["Introduction to Problem Statement", "solution"]
 draft: false
 ---
-
-A GALLANT project exploring how to encourage active travel to reduce carbon emissions. 
-However, there’s currently no clear way for individuals or communities to see how much CO₂ they’ve saved. This lack of visibility makes it harder to promote sustainable travel habits. Our project explores how to track and communicate these savings in a meaningful way.
 
 
 ## 🌍 Active Travel CO₂ Offset Tracker
@@ -24,6 +20,7 @@ This project focuses on active travel — walking, cycling, and wheeling — and
 
 While active travel supports a more sustainable city, there’s currently no easy way for individuals or communities to see the impact of their travel choices. This project explores how we might track and communicate CO₂ savings from active journeys in a way that motivates long-term behaviour change by offering meaningful incentives
 
+---
 
 ## ❓ Problem Statement
 Although many people walk, cycle, or use personal mobility devices, there is no straightforward system that shows users how much carbon they’ve saved compared to taking motorized transport.
@@ -36,6 +33,7 @@ Although many people walk, cycle, or use personal mobility devices, there is no 
 
 * What are the existing data that can be exported and how can they be utilized?
 
+---
 
 ## 🗓️ Week 1: Understanding the Problem & Partner Expectations
 We began with a meeting with Ms. Sarah Gambell from GALLANT to clarify the scope and constraints of the project. We learned that our work focuses on enhancing communiMap, not building a new app.
@@ -48,6 +46,8 @@ However, the app doesn't contain existing route data needed to calculate CO₂ s
 This meant we had to pivot our approach — we began exploring how to work on top of the existing app by identifying relevant data points such as distance travelled, time taken, and mode of transport to enable meaningful CO₂ savings calculations.
 
 Currently, gamification within communiMap is minimal, limited to simple badge rewards. However, there is clear interest in expanding this with more engaging features such as leaderboards and public-facing incentives. In particular, public recognition for organizations—for example, highlighting top CO₂ savers—has been identified as a strong motivator that could encourage wider participation and commitment to active travel.
+
+---
 
 ## ⚙️ Technical Challenges and Strategic Decisions 
 ### 🚫 The Barrier: 
@@ -65,6 +65,7 @@ No CO₂ related data means we cannot directly plug in a CO₂ calculator.
 
 We ultimately chose to **build an external carbon emissions calculator**, ensuring scalability and independence from the communiMap backend. 
 
+---
 
 ## 🎯 Behavioral Design Meets Environmental Action 
 
@@ -89,7 +90,11 @@ We based our solution on two key behavioral psychology frameworks:
 
 
 
+---
 
+## 🎬 Week 1 Pitch
+
+{{< video src="images/week1.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
 
 
 

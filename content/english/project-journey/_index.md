@@ -1,5 +1,5 @@
 ---
-title: "Our Design Journey"
+title: "Our Project Journey"
 draft: false
 ---
 
