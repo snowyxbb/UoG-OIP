@@ -1,26 +1,19 @@
-.snap-container {
-  scroll-snap-type: y mandatory;
-  width: 100vw;
-}
-html, body {
-  scroll-snap-type: y mandatory;
-}
 /* Add your own custom styles here */
 
 .snap-container {
   scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .snap-section {
-    scroll-snap-align: center;
-}
-
-.snap-section--centered {
+  scroll-snap-align: start;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .snap-section > a.block {
   display: flex;
