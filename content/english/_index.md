@@ -27,11 +27,12 @@ features:
 
   - title: "Problem Statement"
     image: "/images/service-2.png"
-    content: "The current challenge is [describe the problem your project solves]. Existing solutions often [mention shortcomings of existing solutions]. This project addresses these issues by [briefly explain how your project solves the problem]."
-    bulletpoints:
-      - "The core problem being addressed"
-      - "Why existing solutions are inadequate"
-      - "The impact of the problem on users or stakeholders"
+    content: "After talking with Sarah Gambell, from GALLANT project, the issue with the communiMap is that there’s currently no clear way for individuals or communities to see how much CO₂ they’ve saved. This lack of visibility makes it harder to promote sustainable travel habits. Our project explores how to track and communicate these savings in a meaningful way. Active travel is a key strategy in reducing carbon emissions, yet there’s currently no visible way for individuals or organizations to see their environmental impact. There is also a lack of incentive to encourage people to choose active travel options. <br><br> Our team narrowed down the problems to:"
+    bulletpointstimes:
+      - "No CO₂ tracking"
+      - "Limited user engagement features"
+      - "Minimal personalization"
+      - "No integration with incentive systems"
     button:
       enable: true
       label: "Get Started Now"

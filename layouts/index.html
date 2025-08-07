@@ -88,6 +88,14 @@
                       </li>
                     {{ end }}
                   </ul>
+                  <ul>
+                    {{ range .bulletpointstimes }}
+                      <li class="relative mb-4 pl-6">
+                        <i class="fa fa-times absolute left-0 top-1.5"></i>
+                        {{ . | markdownify }}
+                      </li>
+                    {{ end }}
+                  </ul>
                 </div>
               </div>
             {{ end }}

@@ -1,234 +1,116 @@
-<h1 align="center">Hugo + Tailwind CSS Starter and Boilerplate</h1>
+# UoG-OIP
 
-<p align="center">Hugoplate is a free starter template built with Hugo and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
+This project is a Hugo + Tailwind CSS starter and boilerplate, named "Hugoplate". It's designed to provide a solid foundation for building static websites with Hugo and styling them using Tailwind CSS.
 
-<p align="center">Made with ♥ by <a href="https://zeon.studio/"> Zeon Studio</a></p>
-<p align=center> If you find this project useful, please give it a ⭐ to show your support.</p>
+## Key Features
 
-<h2 align="center"> <a target="_blank" href="https://zeon.studio/preview?project=hugoplate" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-hugoplate-netlify-app/6lyxjw6t4r?form_factor=desktop">Page Speed (95+)🚀</a>
-</h2>
+*   **Multi-Authors:** Supports multiple authors for content.
+*   **Search Functionality:** Includes built-in search capabilities.
+*   **Dark Mode:** Configurable dark mode (though currently disabled in the provided `data/theme.json`).
+*   **Tags & Categories:** Organizes content using tags and categories.
+*   **Deployment Ready:** Pre-configured for deployment on Netlify, Vercel, GitHub Actions, GitLab CI, and AWS Amplify.
+*   **Responsive Design:** Fully responsive layout.
+*   **Markdown Content:** Content is written and managed in Markdown files.
 
-<p align="center">
-  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.126.0" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.126.0&color=f00&logo=hugo" />
-  </a>
+## Tech Stack
 
-  <a href="https://github.com/zeon-studio/hugoplate/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/zeon-studio/hugoplate" alt="license">
-  </a>
+*   **Hugo:** Static site generator.
+*   **Tailwind CSS v4.0:** Utility-first CSS framework.
+*   **Go:** Used for Hugo modules and potentially other Go-based tools.
+*   **Node.js:** Used for managing development dependencies and running scripts (e.g., Tailwind CSS compilation, project setup).
 
-  <a href="https://github.com/zeon-studio/hugoplate">
-    <img src="https://img.shields.io/github/languages/code-size/zeon-studio/hugoplate" alt="code size">
-  </a>
+## Building and Running
 
-  <a href="https://github.com/zeon-studio/hugoplate/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/zeon-studio/hugoplate" alt="contributors">
-  </a>
-</p>
+### Prerequisites
 
-## 🎁 What's Included
+*   **Hugo Extended:** v0.144+
+*   **Node.js:** v22+
+*   **Go:** v1.24+
 
-We have included almost everything you need to start your Hugo project. Let's see what's included in this template:
+### Hugo Installation
 
-### 📌 Key Features
+**macOS:**
 
-- 👥 Multi-Authors
-- 🎯 Similar Posts Suggestion
-- 🔍 Search Functionality
-- 🌑 Dark Mode
-- 🏷️ Tags & Categories
-- 🔗 Netlify setting pre-configured
-- 📞 Support contact form
-- 📱 Fully responsive
-- 📝 Write and update content in Markdown
-- 💬 Disqus Comment
-- 🔳 Syntax Highlighting
+1.  **Using Homebrew (Recommended):**
+    ```bash
+    brew install hugo
+    ```
+2.  **Manual Installation:**
+    *   Download the latest `hugo_extended` version for macOS from the [Hugo Releases page](https://github.com/gohugoio/hugo/releases). Look for a `.tar.gz` file.
+    *   Extract the downloaded archive.
+    *   Move the `hugo` executable to `/usr/local/bin` (or any directory in your PATH).
+    *   Verify the installation: `hugo version`
 
-### 📄 15+ Pre-designed Pages
+**Windows:**
 
-- 🏠 Homepage
-- 👤 About
-- 📞 Contact
-- 👥 Authors
-- 👤 Author Single
-- 📝 Blog
-- 📝 Blog Single
-- 🚫 Custom 404
-- 💡 Elements
-- 📄 Privacy Policy
-- 🏷️ Tags
-- 🏷️ Tag Single
-- 🗂️ Categories
-- 🗂️ Category Single
-- 🔍 Search
+1.  **Using Winget (Recommended):**
+    ```powershell
+    winget install Hugo.Hugo.Extended
+    ```
+2.  **Manual Installation:**
+    *   Download the latest `hugo_extended` version for Windows (64-bit) from the [Hugo Releases page](https://github.com/gohugoio/hugo/releases). Look for a `.zip` file.
+    *   Create a new folder (e.g., `C:\Hugo`) and extract the contents of the `.zip` file into it.
+    *   Add the `C:\Hugo\bin` directory to your system's PATH environment variable.
+    *   Verify the installation: Open a new Command Prompt or PowerShell window and run `hugo version`.
 
-### 📦 Tech Stack
+### Project Setup
 
-- [Hugo](https://gohugo.io/)
-- [Tailwind CSS v4.0](https://tailwindcss.com/)
-- [AutoPrefixer](https://autoprefixer.github.io/)
-- [Hugo Modules](https://gohugo.io/hugo-modules/) by [Gethugothemes](https://gethugothemes.com/hugo-modules)
-- [Markdown](https://markdownguide.org/)
-- [Prettier](https://prettier.io/)
-- [Jshint](https://jshint.com/)
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
-- [Github Actions](https://github.com/features/actions)
-- [Gitlab Ci](https://docs.gitlab.com/ee/ci/)
-- [AWS Amplify](https://aws.amazon.com/amplify/)
-
----
-
-## 🚀 Getting Started
-
-First you need to [clone](https://github.com/zeon-studio/hugoplate) or [download](https://github.com/zeon-studio/hugoplate/archive/refs/heads/main.zip) the template repository, and then let's get started with the following process:
-
-### ⚙️ Prerequisites
-
-To start using this template, you need to have some prerequisites installed on your machine.
-
-- [Hugo Extended v0.144+](https://gohugo.io/installation/)
-- [Node v22+](https://nodejs.org/en/download/)
-- [Go v1.24+](https://go.dev/doc/install)
-
-### 👉 Project Setup
-
-We built this custom script to make your project setup easier. It will create a new Hugo theme folder and clone the Hugoplate theme into it. Then move the exampleSite folder into the root directory. So that you can start your Hugo server without going into the exampleSite folder. Use the following command to setup your project.
+To set up the project, run the following command:
 
 ```bash
 npm run project-setup
 ```
 
-### 👉 Install Dependencies
+### Install Dependencies
 
-Install all the dependencies using the following command.
+Install all Node.js dependencies:
 
 ```bash
 npm install
 ```
 
-### 👉 Development Command
+### Development Server
 
-Start the development server using the following command.
+To start the development server and view the site locally, run:
 
 ```bash
 npm run dev
 ```
 
-### 🎬 Still Confused? Watch a Quick Video
+This command runs `hugo server`, which typically serves the site at `http://localhost:1313`.
 
-https://github.com/zeon-studio/hugoplate/assets/58769763/c260c0ae-91be-42ce-b8db-aa7f11f777bd
+### Creating New Pages
 
----
-
-## 📝 Customization
-
-This template has been designed with a lot of customization options in mind. You can customize almost anything you want, including:
-
-### 👉 Site Config
-
-You can change the site title, base URL, language, theme, plugins, and more from the `hugo.toml` file.
-
-### 👉 Site Params
-
-You can customize all the parameters from the `config/_default/params.toml` file. This includes the logo, favicon, search, SEO metadata, and more.
-
-### 👉 Colors and Fonts
-
-You can change the colors and fonts from the `data/theme.json` file. This includes the primary color, secondary color, font family, and font size.
-
-### 👉 Social Links
-
-You can change the social links from the `data/social.json` file. Add your social links here, and they will automatically be displayed on the site.
-
----
-
-## 🛠 Advanced Usage
-
-We have added some custom scripts to make your life easier. You can use these scripts to help you with your development.
-
-### 👉 Update Theme
-
-If you want to update the theme, then you can use the following command. It will update the theme to the latest version.
+To create a new page, you can use the Hugo CLI:
 
 ```bash
-npm run update-theme
+hugo new content/english/your-new-page.md
 ```
 
-> **Note:** This command will work after running the `project-setup` script.
+This will create a new Markdown file at `content/english/your-new-page.md` with some front matter. You can then edit this file to add your content.
 
-### 👉 Update Modules
+**Folders and Files for New Pages:**
 
-We have added a lot of modules to this template. You can update all the modules using the following command.
+*   **`content/english/`**: This is the primary directory for your Markdown content files.
+*   **`archetypes/default.md`**: This file serves as a template for new content. When you run `hugo new`, it uses this archetype to pre-populate your new Markdown file with front matter (like `title`, `date`, `draft`, etc.). You can customize this file to include common fields for your content.
 
-```bash
-npm run update-modules
-```
+### Compiling and Rendering
 
-### 👉 Remove Dark Mode
-
-If you want to remove dark mode from your project, you can use the following command to remove dark mode from your project.
-
-```bash
-npm run remove-darkmode
-```
-
-> **Note:** This command will work before running the `project-setup` script. If you have already run the `project-setup` command, then you have to run `npm run theme-setup` first, and then you can run this command. Afterward, you can run `npm run project-setup` again.
-
----
-
-## 🚀 Build And Deploy
-
-After you finish your development, you can build or deploy your project almost everywhere. Let's see the process:
-
-### 👉 Build Command
-
-To build your project locally, you can use the following command.
+To build the production-ready static site, use:
 
 ```bash
 npm run build
 ```
 
-### 👉 Deploy Site
+This command runs `hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic`, generating the output in the `public` directory. This `public` directory will contain all the static HTML, CSS, and JavaScript files ready for deployment.
 
-We have provided 5 different deploy platform configurations with this template, so you can deploy easily.
+## Development Conventions
 
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
-- [Github Actions](https://github.com/features/actions)
-- [Gitlab Ci](https://docs.gitlab.com/ee/ci/)
-- [AWS Amplify](https://aws.amazon.com/amplify/)
-
-And if you want to host some other hosting platforms. Then you can build your project, and you will get a `public` folder. that you can copy and paste on your hosting platform.
-
-> **Note:** You must change the `baseURL` in the `hugo.toml` file. Otherwise, your site will not work properly.
-
----
-
-## 🔒 Guide to Staying Compliant
-
-### 🐞 Reporting Issues
-
-We use GitHub Issues as the official bug tracker for this Template. Please search [existing issues](https://github.com/zeon-studio/hugoplate/issues). Someone may have already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/zeon-studio/hugoplate/issues).
-
-### 📝 License
-
-Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon.studio/)
-
-**Code License:** Released under the [MIT](https://github.com/zeon-studio/hugoplate/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
-
----
-
-## 🖼️ Showcase
-
-List of some projects people are building with [**Hugoplate**!](https://github.com/zeon-studio/hugoplate/discussions/207)
-Don't forget to add yours.
-
----
-
-## 💻 Need Customization?
-
-If you need a custom theme, theme customization, or complete website development services from scratch, you can [Hire Us](https://zeon.studio/estimate-project).
+*   **Content Management:** In this Hugo project, you will primarily write content in Markdown (`.md`) files instead of raw HTML. Hugo processes these Markdown files and converts them into static HTML pages during the build process. This allows for easier content creation and management. You can find examples of various content elements and their Markdown syntax in:
+    *   `content/english/pages/elements.md`
+    *   `content/english/blog/post-1.md`
+*   **Site Configuration:** Main site settings are in `hugo.toml`.
+*   **Site Parameters:** Customizable parameters (logo, favicon, SEO, etc.) are in `config/_default/params.toml`.
+*   **Menu Configuration:** Navigation menus are defined in `config/_default/menus.en.toml` (for English).
+*   **Styling:** Tailwind CSS is used for styling. The theme's colors and fonts are configured in `data/theme.json`, and processed by `tailwind-plugin/tw-theme.js`.
+*   **Code Formatting:** `prettier` is used for code formatting.
