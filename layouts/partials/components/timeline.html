@@ -1,7 +1,7 @@
 <div class="timeline">
   {{ $pages := .Pages.ByDate.Reverse }}
   {{ range $i, $page := $pages }}
-    <div class="timeline-item {{ if (modBool $i 2) }}timeline-item-right{{ else }}timeline-item-left{{ end }} reveal snap-section">
+    <div class="timeline-item snap-section {{ if (modBool $i 2) }}timeline-item-right{{ else }}timeline-item-left{{ end }} reveal">
       <div class="timeline-content bg-gray-200 dark:bg-darkmode-body rounded-lg p-6 shadow-lg">
         {{ with .Params.image }}
           <img src="{{ . | relURL }}" alt="{{ $page.Title }}" class="mb-6 w-full rounded-lg" />

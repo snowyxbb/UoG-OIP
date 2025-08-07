@@ -1,16 +1,26 @@
 {{ define "main" }}
-  <div class="container pb-12 snap-container">
-    <div class="row justify-center">
-      <div class="lg:col-10 snap-section">
-        <div class="content text-center">
-          {{ .Content }}
+  <div class="snap-container">
+    <div class="snap-section snap-section--centered min-h-screen pt-16">
+      <div class="container pb-12">
+        <div class="row justify-center">
+          <div class="lg:col-10">
+            <div class="content text-center">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        <div class="scroll-down-button">
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
       </div>
     </div>
-    <div class="scroll-down-button">
-      <i class="fa-solid fa-chevron-down"></i>
+    <div class="snap-section pt-24 pb-24">
+      <div class="container">
+        {{ partial "components/timeline" . }}
+      </div>
     </div>
-    {{ partial "components/timeline" . }}
+    <div class="footer-section snap-section">
+      {{ partial "essentials/footer" . }}
+    </div>
   </div>
-  {{ partial "essentials/footer" . }}
 {{ end }}
