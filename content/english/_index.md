@@ -26,7 +26,7 @@ features:
       link: "#"
 
   - title: "Problem Statement"
-    image: "/images/service-2.png"
+    image: "/images/problem2.png"
     content: "After talking with Sarah Gambell, from GALLANT project, the issue with the communiMap is that there’s currently no clear way for individuals or communities to see how much CO₂ they’ve saved. This lack of visibility makes it harder to promote sustainable travel habits. Our project explores how to track and communicate these savings in a meaningful way. Active travel is a key strategy in reducing carbon emissions, yet there’s currently no visible way for individuals or organizations to see their environmental impact. There is also a lack of incentive to encourage people to choose active travel options. <br><br> Our team narrowed down the problems to:"
     bulletpointstimes:
       - "No CO₂ tracking"
