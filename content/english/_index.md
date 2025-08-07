@@ -12,15 +12,14 @@ banner:
 # Features
 features:
   - title: "Project Description"
-    image: "/images/service-1.png"
-    content: "This project aims to provide a comprehensive solution for [briefly describe what your project does]. It leverages [key technologies] to [achieve what]."
+    image: "/images/gallantbig.png"
+    content: "GALLANT (Glasgow as a Living Lab Accelerating Novel Transformation) is a University project aiming to design novel ways to adapt to climate change. One of five main areas of focus of the project surrounds active travel and promoting walking and cycling over the use of motor vehicles.The Community Collaboration workstream facilitates various community science projects including “Movement Co-Lab” exploring how people move through their communities — and what makes that movement safe, accessible, and joyful. Participants log information on communiMap — a digital tool that acts a data repository for the community science data. <br><br> With the app, users can:"
     bulletpoints:
-      - "Detailed feature set of the project"
-      - "Technologies used and their benefits"
-      - "Scalability and future development plans"
-      - "Target audience and user benefits"
-      - "Unique selling points and competitive advantages"
-      - "How to get involved or contribute"
+      - "Share how they travel — by foot, wheels, or otherwise"
+      - "Map their routes"
+      - "Flag barriers (e.g. broken pavements, missing crossings)"
+      - "Highlight routes that feel safe, joyful, or inspiring"
+    additional_content: "Together, these insights build a shared picture of movement across the city — supporting fairer, more inclusive planning and design"
     button:
       enable: false
       label: "Get Started Now"
