@@ -14,48 +14,84 @@ A GALLANT project exploring how to encourage active travel to reduce carbon emis
 However, there’s currently no clear way for individuals or communities to see how much CO₂ they’ve saved. This lack of visibility makes it harder to promote sustainable travel habits. Our project explores how to track and communicate these savings in a meaningful way.
 
 
-## Problem Statement 
+## 🌍 Active Travel CO₂ Offset Tracker
+A GALLANT Community Collaboration Project
+
+## 🗂️ About the Project
+This project is part of the University of Glasgow’s GALLANT (Glasgow as a Living Lab Accelerating Novel Transformation) initiative, designed to explore innovative climate adaptation strategies through community collaboration.
+
+This project focuses on active travel — walking, cycling, and wheeling — and how it helps reduce carbon emissions. It uses the communiMap platform to log user-submitted movement data across Glasgow. While active travel supports a more sustainable city, there’s currently no easy way for individuals or communities to see the impact of their travel choices. This project explores how we might track and communicate CO₂ savings from active journeys in a way that motivates long-term behaviour change.
+
+While active travel supports a more sustainable city, there’s currently no easy way for individuals or communities to see the impact of their travel choices. This project explores how we might track and communicate CO₂ savings from active journeys in a way that motivates long-term behaviour change by offering meaningful incentives
 
 
-### The Challenge
+## ❓ Problem Statement
+Although many people walk, cycle, or use personal mobility devices, there is no straightforward system that shows users how much carbon they’ve saved compared to taking motorized transport.
 
-Active travel is a key strategy in reducing carbon emissions, yet there's currently no visible way for individuals or organizations to see their environmental impact. There is also a lack of incentive to encourage people to choose active travel options. 
+* How can we calculate CO₂ savings using travel data?
 
-### Key Questions
+* How do we motivate users to make more sustainable choices?
 
-*  Tell me more about Gallant and its mission to promote active travel.
+* Can gamified systems encourage habitual behaviour change?
 
-*  How can we motivate users to take more active journeys?
-
-*  How can we calculate CO₂ savings accurately from journey data?
-
-*  What are the exported data formats and how can they be utilized?
+* What are the existing data that can be exported and how can they be utilized?
 
 
-## Project Goals
+## 🗓️ Week 1: Understanding the Problem & Partner Expectations
+We began with a meeting with Ms. Sarah Gambell from GALLANT to clarify the scope and constraints of the project. We learned that our work focuses on enhancing communiMap, not building a new app.
 
-* Develop a system to track and calculate CO₂ saved through active travel.
+🔍 Key Insights
+communiMap allows users to upload location-based content and photos.
 
-* Create a gamified experience (e.g., badges, leaderboards, group competitions).
+However, the app doesn't contain existing route data needed to calculate CO₂ savings.
 
-* Enable public recognition (e.g., highlight organizations promoting active travel).
+This meant we had to pivot our approach — we began exploring how to work on top of the existing app by identifying relevant data points such as distance travelled, time taken, and mode of transport to enable meaningful CO₂ savings calculations.
 
-* Build a dashboard or plugin that visualizes total and individual CO₂ savings.
+Currently, gamification within communiMap is minimal, limited to simple badge rewards. However, there is clear interest in expanding this with more engaging features such as leaderboards and public-facing incentives. In particular, public recognition for organizations—for example, highlighting top CO₂ savers—has been identified as a strong motivator that could encourage wider participation and commitment to active travel.
+
+## ⚙️ Technical Challenges and Strategic Decisions 
+### 🚫 The Barrier: 
+
+No CO₂ related data means we cannot directly plug in a CO₂ calculator. 
+
+### 🛠️ Our Considered Approaches: 
+
+- **Machine Learning**: Train a model to infer route paths from limited data.   
+
+- **Collaboration with Developers**: Seek backend access to raw GPS routes.   
+
+- **Plugin Approach**: Rejected due to potential security, UX, and performance concerns. 
 
 
-## Insights from Partner Interview 
+We ultimately chose to **build an external carbon emissions calculator**, ensuring scalability and independence from the communiMap backend. 
 
-* communiMap currently logs:
 
-  * Travel mode (walking, wheeling, cycling)
-  * Routes taken
-  * User-submitted comments (e.g. barriers or joyful routes)
+## 🎯 Behavioral Design Meets Environmental Action 
 
-* Gamification is minimal at the moment — only badges.
+We based our solution on two key behavioral psychology frameworks: 
 
-* There's interest in exploring leaderboards and public-facing incentives.
 
-* Publicity for organizations (e.g., being featured as a top CO₂ saver) is seen as a strong motivator.
+- **Self-Determination Theory (SDT)** 
 
-* No standard CO₂ calculation model is used yet — we may use formulas based on distance and transport type replaced.
+  - **Autonomy**: Let users choose transport methods and control their impact. 
+
+  - **Competence**: Offer points, badges, and feedback to show progression. 
+
+  - **Relatedness**: Introduce guilds to foster teamwork and shared goals. 
+
+  
+- **Octalysis Framework by Yu-kai Chou** 
+
+  - Focused on **core drives** like accomplishment, social influence, and empowerment. 
+
+  
+> 💡 Our goal wasn’t just to build a feature — it was to **shape behavior** through clear, meaningful feedback and social motivation. 
+
+
+
+
+
+
+
+
 
