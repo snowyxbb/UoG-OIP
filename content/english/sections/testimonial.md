@@ -18,7 +18,7 @@ testimonials:
   - name: "Sng Xue Bin"
     designation: "Member 3"
     avatar: "/images/xuebin.png"
-    content: "Prototyping served as a crucial communication tool between designers, developers, and stakeholders. Interactive prototypes eliminated ambiguity by demonstrating exactly how features should behave, reducing misinterpretations and rework. This alignment from the outset ensured smoother handoffs and maintained design integrity throughout implementation."
+    content: "Working on this project in Glasgow has been a transformative journey. It challenged me to see the world from a new vantage point, far different from my experiences in Singapore. The project's unique focus was a compelling opportunity to discover the capabilities of communiMap, but my most significant takeaway was witnessing the passion the people of Glasgow have for their community and their environment."
 
   - name: "Ang Wei Lun"
     designation: "Member 4"
