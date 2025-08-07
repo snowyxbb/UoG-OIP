@@ -94,7 +94,7 @@ We based our solution on two key behavioral psychology frameworks:
 
 ## 🎬 Week 1 Pitch
 
-{{< video src="images/week1.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
+{{< video src="videos/week1.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
 
 
 

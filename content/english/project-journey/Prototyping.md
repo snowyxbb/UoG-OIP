@@ -122,4 +122,4 @@ This reflection process has deepened our understanding of:
 
 ## 🎬 Week 2 Pitch 
 
-{{< video src="/images/week2.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
+{{< video src="videos/week2.mp4" width="100%" height="auto" autoplay="false" loop="false" muted="false" controls="true" class="rounded-lg" >}}
