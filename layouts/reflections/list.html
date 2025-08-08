@@ -1,47 +1,28 @@
 {{ define "main" }}
-  <section class="section pt-7">
+  {{ partial "page-header" . }}
+
+  <section class="section">
     <div class="container">
-      <div class="row justify-center">
-        <article class="lg:col-10">
-          {{ $image:= .Params.image }}
-          {{ if $image }}
-            <div class="mb-10">
-              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
-            </div>
-          {{ end }}
-          <h1 class="h2 mb-4">
-            {{ .Title }}
-          </h1>
-          <ul class="mb-4">
-            <li class="mr-4 inline-block">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-                <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ .Params.author }}
-              </a>
-            </li>
-            <li class="mr-4 inline-block">
-              <i class="fa-regular fa-clock mr-2"></i>
-              {{ time.Format ":date_long" .PublishDate }}
-            </li>
-          </ul>
-          <div class="content mb-10">
-            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
-            {{ .Content }}
+      <div class="row gx-5">
+        <div class="col-12">
+          <div class="row">
+            {{/* Paginate and list regular pages (children) in this section */}}
+            {{ $paginator := .Paginate .RegularPages }}
+            {{ range $paginator.Pages }}
+              <div class="md:col-6 mb-14">
+                {{/* Render without image for a cleaner reflections UX */}}
+                <div class="bg-body dark:bg-darkmode-body">
+                  <h4 class="mb-3">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  </h4>
+                  <p class="mb-6">{{ .Summary | plainify }}</p>
+                  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">{{ T "read_more" }}</a>
+                </div>
+              </div>
+            {{ end }}
           </div>
-          <div class="row items-start justify-between">
-            <div class="lg:col-6 flex items-center lg:justify-end">
-              <h5>{{ T "share" }} :</h5>
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
-            </div>
-          </div>
-          <!-- comments -->
-          {{ if site.Config.Services.Disqus.Shortname }}
-            <div class="mt-20">
-              {{ template "_internal/disqus.html" . }}
-            </div>
-          {{ end }}
-        </article>
+          {{ partial "components/pagination.html" . }}
+        </div>
       </div>
     </div>
   </section>

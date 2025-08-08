@@ -1,4 +1,16 @@
-/* Add your own custom styles here */
+/* custom styles */
+
+.content p {
+  font-size: 1.125rem;
+}
+
+.content li {
+  line-height: 1.8;
+}
+
+.content h2 {
+  margin-top: 2rem;
+}
 
 .snap-container {
   scroll-snap-type: y mandatory;
@@ -42,8 +54,8 @@
 .footer-section {
   display: block;
   width: 100%;
-  height: auto; /* Allow footer to take its natural height */
-  scroll-snap-align: end; /* Snap to the end of the section */
+  height: auto;
+  scroll-snap-align: end;
 }
 
 footer {
@@ -61,7 +73,7 @@ footer {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #447C3C; /* New Primary Green */
+  background-color: #447C3C;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -94,7 +106,7 @@ footer {
 
 .timeline-item::after:hover {
   transform: translateY(-50%) scale(1.2);
-  background-color: #447C3C; /* New Primary Green */
+  background-color: #447C3C;
   border-color: white;
 }
 
@@ -142,17 +154,17 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: calc(50% - 60px); /* Adjust width to fit the space */
+  width: calc(50% - 60px);
   text-align: center;
-  z-index: 0; /* Ensure it's behind the timeline line */
+  z-index: 0;
 }
 
 .timeline-item-left .timeline-opposite-text {
-  right: calc(-100% + 60px); /* Position to the right of the timeline line */
+  right: calc(-100% + 60px);
 }
 
 .timeline-item-right .timeline-opposite-text {
-  left: calc(-100% + 60px); /* Position to the left of the timeline line */
+  left: calc(-100% + 60px);
 }
 
 .timeline-content {
@@ -192,7 +204,7 @@ footer {
 
 .scroll-down-button i {
   font-size: 2rem;
-  color: #447C3C; /* Primary Green */
+  color: #447C3C;
 }
 
 @keyframes bounce {
