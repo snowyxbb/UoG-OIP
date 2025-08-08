@@ -3,7 +3,6 @@ title: "Daily Reflections"
 date: 2025-08-07T12:00:00+00:00
 draft: false
 author: "Team 2"
-image: "/images/banner.png"
 summary: "Day-by-day notes capturing decisions, progress, and learnings."
 categories: ["project-journey"]
 weight: 2

@@ -3,7 +3,6 @@ title: "Reflections on Our Project Journey: A Team Assessment"
 date: 2025-08-07T10:00:00+00:00
 draft: false
 author: "Team 2"
-image: "/images/banner.png"
 summary: "A comprehensive assessment of our project journey, what went well, what could be improved, and key learnings."
 weight: 1
 ---

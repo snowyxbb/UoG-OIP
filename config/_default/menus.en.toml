@@ -11,37 +11,6 @@ name = "About Us"
 url = "/about-us"
 weight = 2
 
-[[main]]
-name = "Elements"
-url = "/elements"
-weight = 3
-
-[[main]]
-weight = 4
-name = "Pages"
-
-[[main]]
-parent = "Pages"
-name = "Blog"
-url = "/blog"
-
-
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
-
-[[main]]
-parent = "Pages"
-name = "404 Page"
-url = "/404"
-
 
 [[main]]
 name = "Project Journey"
@@ -55,17 +24,3 @@ url = "/reflections"
 
 
 # footer menu
-[[footer]]
-name = "Option 1"
-url = "/communimap/option-1"
-weight = 1
-
-[[footer]]
-name = "Option 2"
-url = "/communimap/option-2"
-weight = 2
-
-[[footer]]
-name = "Option 3"
-url = "/communimap/option-3"
-weight = 3

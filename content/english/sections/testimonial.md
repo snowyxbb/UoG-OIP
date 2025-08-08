@@ -27,7 +27,7 @@ testimonials:
 
   - name: "Skyra Choo"
     designation: "Member 5"
-    avatar: "/images/avatar.png"
+    avatar: "/images/skyra.png"
     content: "The project demonstrated how prototyping can prevent expensive mistakes down the line. A particular feature initially seemed intuitive in sketches but, when prototyped, exposed usability hurdles that would have been far costlier to address post-development. By catching these issues early, we saved significant time and resources. This experience underscored that investing in prototyping isn’t an added step—it’s a strategic tool for risk mitigation."
 
   - name: "Toh Li En"
