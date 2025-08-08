@@ -30,10 +30,21 @@
 
 .snap-section {
   scroll-snap-align: start;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .snap-container {
+    scroll-snap-type: none;
+    height: auto;
+  }
+  .snap-section {
+    height: auto;
+    padding: 100px 20px;
+  }
 }
 
 
