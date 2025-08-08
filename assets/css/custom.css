@@ -280,6 +280,10 @@ footer {
   color: #ffffff !important; /* Force white text in light mode */
 }
 
+.dark thead {
+  color: #000000 !important; /* Force dark text in dark mode for table headers */
+}
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
