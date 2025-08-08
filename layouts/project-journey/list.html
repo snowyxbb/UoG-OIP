@@ -1,16 +1,51 @@
 {{ define "main" }}
 
-  <div class="container pb-12 snap-container">
-    <div class="row justify-center">
-      <div class="lg:col-10 snap-section">
-        <div class="content text-center">
-          {{ .Content }}
+  <section class="relative min-h-[calc(100vh-var(--navbar-height))] py-20 bg-cover bg-center text-white flex items-center justify-center hero-section">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container relative z-10 text-center pt-[var(--navbar-height)]">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="content text-white">
+            {{ .Content }}
+          </div>
         </div>
       </div>
     </div>
-    <div class="scroll-down-button">
-      <i class="fa-solid fa-chevron-down"></i>
+    <div class="scroll-down-button absolute bottom-12 left-1/2 -translate-x-1/2 cursor-pointer z-20">
+      <i class="fa-solid fa-chevron-down text-4xl text-white animate-bounce"></i>
     </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const heroSection = document.querySelector('.hero-section');
+      const htmlElement = document.documentElement;
+
+      function setHeroBackground() {
+        if (htmlElement.classList.contains('dark')) {
+          heroSection.style.backgroundImage = 'url(\'{{ (resources.Get "images/Background_Project_Journey.png").Permalink }}\' )';
+        } else {
+          heroSection.style.backgroundImage = 'url(\'{{ (resources.Get "images/Background_Project_Journey_Light.png").Permalink }}\' )';
+        }
+      }
+
+      // Set initial background
+      setHeroBackground();
+
+      // Observe changes to the 'dark' class on the html element
+      const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.attributeName === 'class') {
+            setHeroBackground();
+          }
+        });
+      });
+
+      observer.observe(htmlElement, { attributes: true });
+    });
+  </script>
+
+  <div class="pb-12 snap-container" id="timeline-start">
     {{ partial "components/timeline" . }}
   </div>
   {{ partial "essentials/footer" . }}

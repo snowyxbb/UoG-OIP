@@ -7,6 +7,7 @@ categories: ["Project Journey"]
 author: "Ryan Oh"
 tags: ["solution", "co2"]
 draft: false
+summary: "💨 Solution: integrating CO₂ emissions calculation and gamification to promote sustainable travel choices."
 ---
 
 ## Finalising Solution 

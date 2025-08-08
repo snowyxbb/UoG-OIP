@@ -7,16 +7,15 @@ categories: ["Project Journey"]
 author: "Ryan Oh"
 tags: ["problem", "research"]
 draft: false
+summary: "Prototyping: from low-fi to high-fi, with iterative design and user feedback."
 ---
+
+
 
 ## 🧪 Prototyping & Design Thinking 
 
-  
 
 We adopted an iterative design process: 
-
-  
-
 1. Low-Fidelity Prototypes: Paper sketches to map out flows and gather team feedback. 
 
 {{< image src="images/lofi.jpg" caption="" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title"  webp="false" >}}

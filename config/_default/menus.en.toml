@@ -19,10 +19,10 @@ weight = 3
 [[main]]
 name = "Project Journey"
 url = "/project-journey"
-weight = 5
+weight = 4
 
 [[main]]
-weight = 7
+weight = 5
 name = "Reflections"
 url = "/reflections"
 

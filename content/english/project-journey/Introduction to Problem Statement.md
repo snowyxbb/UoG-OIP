@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Problem Statement"
+title: "1. Introduction to Problem Statement"
 meta_title: "Introduction to Problem Statement"
 description: "Information on the topic."
 date: 2025-07-22T12:10:00Z
@@ -7,6 +7,7 @@ categories: ["Project Journey"]
 author: "Ryan Oh"
 tags: ["Introduction to Problem Statement", "solution"]
 draft: false
+summary: "🌍 Problem statement: understanding the core issues, identifying user needs, and defining the scope of the project."
 ---
 
 

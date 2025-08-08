@@ -67,32 +67,43 @@
   const scrollDownButton = document.querySelector(".scroll-down-button");
   if (scrollDownButton) {
     scrollDownButton.addEventListener("click", () => {
-      const snapSections = document.querySelectorAll(".snap-section");
-      let nextSection = null;
-
-      // Find the currently visible snap section
-      for (let i = 0; i < snapSections.length; i++) {
-        const rect = snapSections[i].getBoundingClientRect();
-        // Check if the section is mostly in view
-        if (rect.top >= 0 && rect.top < window.innerHeight * 0.5) {
-          if (i + 1 < snapSections.length) {
-            nextSection = snapSections[i + 1];
-            break;
-          }
-        }
-      }
-
-      // If no section is mostly in view, or it's the last one, go to the first section
-      if (!nextSection && snapSections.length > 0) {
-        nextSection = snapSections[0];
-      }
-
-      if (nextSection) {
-        nextSection.scrollIntoView({
+      const timelineStart = document.getElementById("timeline-start");
+      if (timelineStart) {
+        timelineStart.scrollIntoView({
           behavior: "smooth",
           block: "start"
         });
       }
     });
   }
+
+  // Slideshow functionality
+  document.querySelectorAll('.slideshow-container').forEach(container => {
+    let slideIndex = 1;
+    const slides = container.querySelectorAll('.mySlides');
+    const dots = document.querySelectorAll('.dot[data-slideshow-id="' + container.id + '"]');
+    const prev = container.querySelector('.prev[data-slideshow-id="' + container.id + '"]');
+    const next = container.querySelector('.next[data-slideshow-id="' + container.id + '"]');
+
+    function showSlides(n) {
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      slides.forEach(slide => slide.style.display = "none");
+      dots.forEach(dot => dot.className = dot.className.replace(" active", ""));
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    if (prev) {
+      prev.addEventListener('click', () => showSlides(slideIndex -= 1));
+    }
+    if (next) {
+      next.addEventListener('click', () => showSlides(slideIndex += 1));
+    }
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showSlides(slideIndex = index + 1));
+    });
+
+    showSlides(slideIndex);
+  });
 })();
