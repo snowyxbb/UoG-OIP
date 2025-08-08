@@ -3,7 +3,7 @@
 banner:
   greentitle: "Green Miles"
   titlecontent: "Going green one step at a time"
-  image: "/images/communimap_applogo_colour_1000px.png"
+  image: "/images/screen.png"
   button:
     enable: false
     label: "Explore our design process"
@@ -13,7 +13,7 @@ banner:
 features:
   - title: "Project Description"
     image: "/images/gallantbig.png"
-    content: "GALLANT (Glasgow as a Living Lab Accelerating Novel Transformation) is a University project aiming to design novel ways to adapt to climate change. One of five main areas of focus of the project surrounds active travel and promoting walking and cycling over the use of motor vehicles.The Community Collaboration workstream facilitates various community science projects including “Movement Co-Lab” exploring how people move through their communities — and what makes that movement safe, accessible, and joyful. Participants log information on communiMap — a digital tool that acts a data repository for the community science data. <br><br> With the app, users can:"
+    content: "GALLANT (Glasgow as a Living Lab Accelerating Novel Transformation) is a University project aiming to design novel ways to adapt to climate change. One of five main areas of focus of the project surrounds active travel and promoting walking and cycling over the use of motor vehicles.The Community Collaboration workstream facilitates various community science projects including “Movement Co-Lab” exploring how people move through their communities — and what makes that movement safe, accessible, and joyful. Participants log information on communiMap — a digital tool that acts a data repository for the community science data. <br><br> In the app, users can:"
     bulletpoints:
       - "Share how they travel — by foot, wheels, or otherwise"
       - "Map their routes"
@@ -38,10 +38,9 @@ features:
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
 
-  - title: "Our Prototype"
+  - title: ""
     id: "our-prototype"
-    image: "/images/service-3.png"
-    content: "Explore our interactive Figma prototype below to get a hands-on feel for our project's user interface and core functionalities. This prototype showcases key features and user flows."
+    content: ""
     iframe_url: "https://embed.figma.com/proto/FBB63698TtNsTthajEMgs8/UoG-OIP?node-id=39-4027&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=39%3A4027&show-proto-sidebar=1&embed-host=share"
     button:
       enable: false
