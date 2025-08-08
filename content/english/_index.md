@@ -38,9 +38,9 @@ features:
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/hugoplate"
 
-  - title: ""
+  - title: "Our Prototype"
     id: "our-prototype"
-    content: ""
+    content: "Explore our interactive Figma prototype below to get a hands-on feel for our project's user interface and core functionalities. This prototype showcases key features and user flows."
     iframe_url: "https://embed.figma.com/proto/FBB63698TtNsTthajEMgs8/UoG-OIP?node-id=39-4027&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=39%3A4027&show-proto-sidebar=1&embed-host=share"
     button:
       enable: false
