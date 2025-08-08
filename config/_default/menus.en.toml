@@ -11,6 +11,10 @@ name = "About Us"
 url = "/about-us"
 weight = 2
 
+[[main]]
+name = "Our Solution"
+url = "/our-solution"
+weight = 3
 
 [[main]]
 name = "Project Journey"
